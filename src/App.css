@@ -1,38 +1,114 @@
-.App {
-  text-align: center;
+body{
+margin: 0 auto !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  margin-top: 5px;
+  margin-bottom: 15px;
+}
+.logo{
+  width: 150px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cardbody{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+}
+.top10{
+  display: flex;
+
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+}
+.button-typemovie{
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+h1 { font-family: 'Enriqueta', arial, serif; line-height: 1.25; margin: 0 0 10px; font-size: 15px; font-weight: bold; }
+
+
+  .bouncy{
+  animation:bouncy 5s infinite linear;
+  position:relative;
+    }
+
+    .movieList{
+      display: flex;
+      flex-wrap: wrap;}
+
+    .MovieCard-part{
+      width: 45%;
+     
+    }
+
+
+    .container {
+      position: relative;
+    }
+ 
+   .description-scroll{
+     overflow: scroll;
+     height: 100px;
+     font-family: 'Helvetica Neue', sans-serif; 
+     font-size: 16px; 
+     line-height: 24px; 
+     margin: 0 0 24px; 
+     text-align: justify; 
+     text-justify: inter-word; }
+   
+.date{
+  font-family: 'Helvetica Neue', sans-serif; 
+  font-size: 16px; 
+  line-height: 24px; 
+
 }
 
-.App-link {
-  color: #61dafb;
+    .card-movie{
+      min-width: 40vw;
+      margin-top: 15px;
+    }
+    
+    .bodydiv{
+      width: 80%;
+    
+    }
+
+    @media only screen and (max-width: 768px) {
+      .bodydiv{
+        width: 100%;
+      
+      }
+    }
+
+
+
+
+   
+
+.navbar{
+  margin-left: 70px;
+  margin-right: 130px;
+} 
+       
+    
+.movieName{
+color: #111; 
+font-family: 'Helvetica Neue', sans-serif; 
+font-size: 25px; 
+font-weight: bold; 
+letter-spacing: -1px; 
+line-height: 1; 
+text-align: left; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+
+.img{
+  height: 600px;
+}
+
+.genres-button{
+  margin-left: 5px;
+  margin-bottom: 5px;
+  margin-right: 5px;
+  margin-top: 5px;
+  align-items: center;
 }
