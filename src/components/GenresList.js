@@ -11,7 +11,7 @@ export default function GenresList(props) {
         let data = await res.json()
         console.log(data, "data from genres")
         let movieList = data.results
-        giveDataToApp(movieList)
+        props.giveDataToApp(movieList)
 
 
     }

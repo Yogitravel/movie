@@ -72,7 +72,9 @@ function App() {
   //   numberArticle = `No. of Articles:${pageSize}`
   // }
 
-
+  function getDatafromGenres(data) {
+    setMovieList(data)
+  }
 
 
   return (
@@ -83,7 +85,7 @@ function App() {
       <div className="bodydiv mx-auto ">
         <div>
           <Banner />
-          <GenresList genres={genreList} ></GenresList>
+          <GenresList genres={genreList} giveDataToApp={getDatafromGenres} ></GenresList>
         </div>
 
         <div>
