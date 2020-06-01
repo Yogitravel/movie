@@ -4,6 +4,7 @@ import { Card, ListGroupItem, ListGroup, Badge, Button } from "react-bootstrap";
 export default function MovieCard(props) {
     let movie = props.movie;
     let genres = props.genresFromMovieList
+
     return (
 
         <React.Fragment>
@@ -25,9 +26,10 @@ export default function MovieCard(props) {
 
                             )
                         })} </div>
+
                         <div className="date">Rating: {movie.vote_average}/10</div>
 
-                        <Button variant="outline-secondary"> Trailer </Button>
+                        <Button onClick={() => props.YoutubeSearch(movie.id)} variant="outline-secondary" > Trailer </Button>
 
 
 
@@ -35,7 +37,7 @@ export default function MovieCard(props) {
                 </div>
 
             </div>
-            {/* </div> */}
+
 
 
         </React.Fragment >

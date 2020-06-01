@@ -25,8 +25,8 @@ export default function Menu() {
                 <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                 <Navbar.Collapse id="responsive-navbar-nav">
                     <Nav className="mr-auto">
-                        <Nav.Link href="#features">Home</Nav.Link>
-                        <Nav.Link href="#pricing">About Us</Nav.Link>
+                        <Nav.Link >Home</Nav.Link>
+                        <Nav.Link >About Us</Nav.Link>
                     </Nav>
                     <div class="searchbox">
                         <Form inline>
